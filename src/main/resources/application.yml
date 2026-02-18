@@ -1,0 +1,15 @@
+server:
+  port: 9092
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CoaderVikas/configuration-service
+          default-label: main
+          clone-on-start: true
+           
